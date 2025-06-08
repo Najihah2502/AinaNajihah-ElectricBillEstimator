@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#EEF2F7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header: App Icon + Welcome -->
+
+        <!-- Card: Inputs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/card_bg_rounded"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/appIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="App Icon"
+                android:src="@drawable/ic_app_logo" />
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Aina!"
+                android:textColor="#333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Electricity Bill Estimator"
+                android:textColor="#5D5FEF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_bg_rounded"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Month"
+                android:textStyle="bold"
+                android:textColor="#555"
+                android:layout_marginTop="8dp" />
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electricity Used (kWh)"
+                android:textStyle="bold"
+                android:textColor="#555"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/editTextUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e.g. 350"
+                android:inputType="number"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rebate (%)"
+                android:textStyle="bold"
+                android:textColor="#555"
+                android:layout_marginTop="8dp" />
+            <Spinner
+                android:id="@+id/spinnerRebate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:textColor="#fff"
+                android:backgroundTint="#5D5FEF"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Card: Results -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg_rounded"
+            android:padding="16dp"
+            android:layout_marginTop="24dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/textTotalCharges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Charges: RM 0.00"
+                android:textSize="16sp"
+                android:textColor="#222" />
+
+            <TextView
+                android:id="@+id/textFinalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final Cost After Rebate: RM 0.00"
+                android:textSize="16sp"
+                android:textColor="#222"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How To Use"
+                android:backgroundTint="#C2185B"
+                android:textColor="#fff"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View History"
+                android:backgroundTint="#A46BF5"
+                android:textColor="#fff"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Developer"
+                android:backgroundTint="#5D5FEF"
+                android:textColor="#fff"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

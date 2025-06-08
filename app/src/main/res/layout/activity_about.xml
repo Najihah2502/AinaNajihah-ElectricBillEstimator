@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F4F6FB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/aina"
+            android:scaleType="centerCrop"
+            android:background="@drawable/profile_border"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Profile Photo" />
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg_rounded"
+            android:padding="24dp"
+            android:elevation="6dp"
+            android:gravity="start">
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nor Aina Najihah Binti Nasir"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#5D5FEF"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Student ID -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID: 2023168411"
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Group -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group: CDCS2405B"
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Subject -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject: Mobile Technology And Development (ICT602)"
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Copyright -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2025 Nor Aina Najihah. All rights reserved."
+                android:textSize="14sp"
+                android:textColor="#888" />
+        </LinearLayout>
+
+        <!-- GitHub Link -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/github"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="GitHub Icon" />
+
+            <TextView
+                android:id="@+id/textLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Source Code on GitHub"
+                android:textSize="16sp"
+                android:textColor="#A46BF5"
+                android:textStyle="bold"
+                android:autoLink="web" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+

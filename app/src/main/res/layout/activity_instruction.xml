@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#EFF3FA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to Use the App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3B49DF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Accent line below title -->
+        <View
+            android:layout_width="48dp"
+            android:layout_height="3dp"
+            android:background="@drawable/rounded_accent"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="start" />
+
+        <!-- Instruction items container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Instruction 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/card_bg_rounded"
+                    android:text="1"
+                    android:textColor="#3B49DF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select the month you want to calculate."
+                    android:textSize="16sp"
+                    android:textColor="#444"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- Instruction 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/card_bg_rounded"
+                    android:text="2"
+                    android:textColor="#3B49DF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the number of electricity units (in kWh) that you used."
+                    android:textSize="16sp"
+                    android:textColor="#444"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- Instruction 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/card_bg_rounded"
+                    android:text="3"
+                    android:textColor="#3B49DF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Choose the rebate percentage if applicable (0% to 5%)."
+                    android:textSize="16sp"
+                    android:textColor="#444"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- Instruction 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/card_bg_rounded"
+                    android:text="4"
+                    android:textColor="#3B49DF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tap the 'Calculate' button. Your total charges and final cost will appear."
+                    android:textSize="16sp"
+                    android:textColor="#444"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- Instruction 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/card_bg_rounded"
+                    android:text="5"
+                    android:textColor="#3B49DF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your result will be saved. Visit 'History' to view saved records by month."
+                    android:textSize="16sp"
+                    android:textColor="#444"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- Instruction 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/card_bg_rounded"
+                    android:text="6"
+                    android:textColor="#3B49DF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tap a record in History to view full details (units, charges, rebate)."
+                    android:textSize="16sp"
+                    android:textColor="#444"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- Instruction 7 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/card_bg_rounded"
+                    android:text="7"
+                    android:textColor="#3B49DF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Visit the 'About' page to learn more about this app and the developer."
+                    android:textSize="16sp"
+                    android:textColor="#444"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

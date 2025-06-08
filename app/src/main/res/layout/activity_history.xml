@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E9EDF7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title with underline accent -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Bills"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#4A57C0"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Accent underline -->
+    <View
+        android:layout_width="56dp"
+        android:layout_height="4dp"
+        android:background="@drawable/rounded_accent"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="start" />
+
+    <!-- Container with shadow and rounded corners -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="8dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="16dp">
+
+        <!-- ListView for Saved Bills -->
+        <ListView
+            android:id="@+id/listViewBills"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#D1D6E9"
+            android:dividerHeight="1.5dp"
+            android:scrollbars="vertical" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
