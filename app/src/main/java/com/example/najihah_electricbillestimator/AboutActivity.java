@@ -17,7 +17,7 @@ public class AboutActivity extends AppCompatActivity {
         TextView textLink = findViewById(R.id.textLink);
         textLink.setOnClickListener(v -> {
             // Replace this with your actual GitHub repo URL
-            String url = "https://github.com/yourusername/electric-bill-estimator";
+            String url = "https://github.com/Najihah2502/AinaNajihah-ElectricBillEstimator";
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse(url));
             startActivity(intent);
